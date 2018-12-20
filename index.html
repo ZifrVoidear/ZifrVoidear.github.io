@@ -1,11 +1,4 @@
-<body>
-<style>
-body {
-	background: #000000;
-	font-family: 'Montserrat', sans-serif;
-	color: #F59B23;
-}
-	</style></body>
+
 <div class="container">
 	
 	<div class="tube">
@@ -22,16 +15,7 @@ body {
 	<div class="final__wrap">
 		<h1 class="final">Tastebreakers</h1>
 	</div> -->
-	<style>
-	.container {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 100%;
-	height: 80%;
-	visibility: hidden;
-}
-	</style>
+	
 </div>
 
 
@@ -47,7 +31,7 @@ body {
 </a>
 
 
-<a href="https://spotifywrapped.com/en/" target="_blank" class="logo">
+<a href=
 	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 558.43 167.49">
   <title>Spotify Logo</title>
   <g>
@@ -65,5 +49,135 @@ body {
       <path d="M553.52,83.67a9.14,9.14,0,1,1,9.16-9.16A9.16,9.16,0,0,1,553.52,83.67Zm.05-17.36a8.23,8.23,0,1,0,8.15,8.2A8.15,8.15,0,0,0,553.57,66.31Zm2,9.13,2.57,3.61H556l-2.32-3.31h-2v3.31h-1.82V69.49h4.26c2.22,0,3.69,1.14,3.69,3.05A2.85,2.85,0,0,1,555.59,75.44Zm-1.54-4.31h-2.37v3h2.37c1.18,0,1.89-.58,1.89-1.51S555.23,71.13,554.05,71.13Z" transform="translate(-4.25 -1.28)" fill="#1ed760"/>
     </g>
   </g>
+
 </svg>
 </a>
+<style>
+html {
+	box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+body {
+	background: #000000;
+	font-family: 'Montserrat', sans-serif;
+	color: #F59B23;
+}
+
+body,
+html {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 80%;
+	visibility: hidden;
+}
+
+.tube {
+	position: relative;
+	width: 100%;
+	height: 24vw;
+	// height: 16vw;
+	// overflow: hidden;
+}
+
+.line {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	line-height: 1;
+	margin: 0;
+	letter-spacing: -0.6vw;
+	font-size: 18vw;
+	white-space: nowrap;
+	text-align: center;
+	
+	div {
+		backface-visibility: hidden;
+	}
+}
+
+.final__wrap {
+	position: absolute;
+	top: 55%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.final {
+	line-height: 1;
+	margin: 0;
+	font-size: 13vw;
+	letter-spacing: -0.5vw;
+	white-space: nowrap;
+	
+	div {
+		backface-visibility: hidden;
+	}
+}
+
+.logo {
+	position: absolute;
+	top: 24px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 100px;
+	height: auto;
+}
+
+.me {
+	position: fixed;
+	z-index: 1000;
+	top: 24px;
+	left: 24px;
+	display: flex;
+	flex-direction: column;
+}
+
+.me__link {
+	position: relative;
+	margin-bottom: 16px;
+	color: yellow;
+	font-family: Helvetica, sans-serif;
+	text-decoration: none;
+	font-size: 16px;
+
+	span {
+		display: block;
+		position: absolute;
+		bottom: -3px;
+		left: 0;
+		height: 1px;
+		width: 5%;
+		background-color: blue;
+		content: "";
+		transition: width 0.3s;
+	}
+
+	&:hover span{
+		width: 100%;
+	}
+}
+
+.twitter {
+	position: fixed;
+	top: 24px;
+	right: 24px;
+	display: block;
+	width: 40px;
+	height: 40px;
+}
+</style>
